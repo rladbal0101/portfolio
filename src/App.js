@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .inner {
-    max-width: 960px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -36,6 +36,12 @@ const GlobalStyle = createGlobalStyle`
   }
   .mt-2 {
     margin-top: 20px;
+  }
+  .mt-3 {
+    margin-top: 30px;
+  }
+  .mt-5 {
+    margin-top: 50px;
   }
   .ml-1 {
     margin-left: 10px;

@@ -1,29 +1,24 @@
 import React from 'react';
 import profileImg from "../images/profile_img.jpg";
 import styled from 'styled-components';
-import { GrContactInfo } from "react-icons/gr";
-
-const MainWrapper = styled.div`
-  /* margin-top: 80px; */
-  margin-top: 30px;
-`;
+import Skills from '../components/Skills';
+import Projects from '../components/Projects';
 
 const ProfileWrapper = styled.div`
   height: 400px;
   display: flex;
   justify-content: center;
-  /* background-color: blue; */
+  align-items: center;
 `;
 
 const ProfileImgWrapper = styled.div`
   width: 280px;
-  height: 300px;
+  height: 350px;
 `;
 
 const ProfileImg = styled.div`
   width: 100%;
-  /* height: 300px; */
-  /* height: 100%; */
+  height: 100%;
   background-image: url(${profileImg});
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,49 +47,47 @@ const ContactTitle = styled.div`
   }
 `;
 const ContactInfoUl = styled.ul`
-  margin-top: 10px;
 
-  li {
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
 
-    h3 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 16px;
+    a {
+      color: #333;
+      text-decoration: none;
 
-      a {
-        color: #333;
+      &:hover {
+        color: #80d8da;
       }
     }
   }
 `;
 
 const Introduce = styled.div`
-  margin-top: 50px;
 
   h2 {
     font-size: 30px;
   }
   p {
-    margin-top: 10px;
     font-size: 20px;
   }
 `;
 
 function Main(props) {
   return (
-    <MainWrapper className='inner'>
+    <div className='inner mt-3'>
       <ProfileWrapper>
         <ProfileImgWrapper>
           <ProfileImg />
         </ProfileImgWrapper>
         <ProfileInfo>
           <ContactTitle>
-            {/* <GrContactInfo/> */}
             <h2>김 유 미</h2>
             <p className='ml-1'>프론트엔드 개발자</p>
           </ContactTitle>
-          <ContactInfoUl>
+          <ContactInfoUl className='mt-1'>
             <li className='mt-2'>
               <h3>생년월일</h3>
               <p className='mt-1'>1993년 11월 16일</p>
@@ -120,16 +113,20 @@ function Main(props) {
           </ContactInfoUl>
         </ProfileInfo>
       </ProfileWrapper>
-      <Introduce>
+      <Introduce className='mt-5'>
         <h2>안녕하세요?</h2>
-        <p>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
-        <p>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
-        <p>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
-        <p>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
-        <p>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
-        <p>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
+        <p className='mt-1'>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
+        <p className='mt-1'>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
+        <p className='mt-1'>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
+        <p className='mt-1'>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
+        <p className='mt-1'>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
+        <p className='mt-1'>프론트엔드 개발을 꿈꾸는 김유미 입니다.</p>
       </Introduce>
-    </MainWrapper>
+
+      <Skills />
+      <Projects />
+      
+    </div>
   );
 }
 
