@@ -5,29 +5,48 @@ import styled from 'styled-components';
 const StyledHeader = styled.div`
   width: 100%;
   height: 80px;
-  background-color: orange;
+  /* background-color: #F3F3F3; */
+  /* position: fixed; */
+  /* top: 0; */
 `;
 
 const HeaderInner = styled.div`
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
+
+  .nav {
+    display: flex;
+    font-size: 20px;
+
+    li {
+      padding: 0 20px;
+    }
+
+    li + li {
+      border-left: 1px solid #333;
+    }
+  }
 `;
 
 const Logo = styled.div`
-  font-size: 24px;
+  font-size: 26px;
 
   :hover {
     color: aliceblue;
   }
 `;
 
+const StyledOutlet = styled(Outlet)`
+  margin-top: 80px;
+`;
+
 const StyledFooter = styled.div`
   width: 100%;
   height: 100px;
-  position: absolute;
-  bottom: 0;
-  background-color: #aeeaa0;
+  margin-top: 30px;
+  border-top: 1px solid #c7c7c7;
 `;
 
 function Layout(props) {
@@ -36,15 +55,15 @@ function Layout(props) {
       {/* 헤더 영역 */}
       <StyledHeader>
         <HeaderInner className='inner'>
-          <Logo className='cursor-pointer'>YUMI KIM</Logo>
-          <ul>
-            <li>Profile</li>
-            <li>Project</li>
+          <Logo className='cursor-pointer'>Yumi Kim</Logo>
+          <ul className='nav'>
+            <li className='cursor-pointer'>Profile</li>
+            <li className='cursor-pointer'>Project</li>
           </ul>
         </HeaderInner>
       </StyledHeader>
 
-      <Outlet />
+      <StyledOutlet />
 
       {/* 푸터 영역 */}
       <StyledFooter>

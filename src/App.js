@@ -8,7 +8,8 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
 
   body {
-    font-family: 'GangwonState';
+    font-family: 'HallymGothic-Regular';
+    font-size: 24px;
     box-sizing: border-box;
     background-color: #F3F3F3;
   }
@@ -26,8 +27,21 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .inner {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
+  }
+
+  .mt-1 {
+    margin-top: 10px;
+  }
+  .mt-2 {
+    margin-top: 20px;
+  }
+  .ml-1 {
+    margin-left: 10px;
+  }
+  .ml-2 {
+    margin-left: 20px;
   }
 `;
 
