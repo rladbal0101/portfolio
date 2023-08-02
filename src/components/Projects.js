@@ -11,22 +11,38 @@ const ProjectsWraaper = styled.div`
 `;
 
 const Project = styled.div`
+  padding: 30px;
+  border: 1px dotted #aaa;
+  border-radius: 8px;
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   ul {
     list-style-type: disc;
     padding-left: 30px;
 
     li {
-      font-size: 14px;
+      /* font-size: 14px; */
     }
     li + li {
       margin-top: 10px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    
+    .project-contents {
+      width: 400px;
+      margin: 0 0 20px 0;
+    }
+  }
+`;
+
+const ProjectContents = styled.div`
+  margin: 0 20px 0 0;
 `;
 
 const LinkWrapper = styled.div`
@@ -49,10 +65,8 @@ const LinkWrapper = styled.div`
 `;
 
 const SiteImgWrapper = styled.div`
-  width: 35vw;
-  width: 300px;
+  width: 400px;
   height: 300px;
-  margin-left: 20px;
 `;
 
 const PieceWishImg = styled.div`
@@ -78,7 +92,7 @@ function Projects(props) {
     <ProjectsWraaper className='mt-5'>
       <h2>Projects</h2>
       <Project className='mt-5'>
-        <div>
+        <ProjectContents className='project-contents'>
           <h3>Piece of your wish</h3>
           <p className='mt-2'>프로젝트 기간 : 2023년 04월 20일 ~ 2023년 05월 03일</p>
           <p className='mt-2'>플라워샵 운영을 위한 제품 소개 및 결제 시스템</p>
@@ -94,13 +108,13 @@ function Projects(props) {
               </a>
             </p>
           </LinkWrapper>
-        </div>
+        </ProjectContents>
         <SiteImgWrapper>
           <a href='https://piecewish.netlify.app/' target='_blank'><PieceWishImg /></a>
         </SiteImgWrapper>
       </Project>
       <Project className='mt-5'>
-        <div>
+        <ProjectContents className='project-contents'>
           <h3>Family Talk</h3>
           <p className='mt-2'>프로젝트 기간 : 2023년 06월 26일 ~ 2023년 07월 11일</p>
           <p className='mt-2'>가족들의 일상 공유 시스템</p>
@@ -120,7 +134,7 @@ function Projects(props) {
               </a>
             </p>
           </LinkWrapper>
-        </div>
+        </ProjectContents>
         <SiteImgWrapper>
           <a href='https://family-talk.netlify.app' target='_blank'><FamilyTalkImg /></a>
         </SiteImgWrapper>

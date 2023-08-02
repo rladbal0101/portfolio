@@ -5,9 +5,6 @@ import styled from 'styled-components';
 const StyledHeader = styled.div`
   width: 100%;
   height: 80px;
-  /* background-color: #F3F3F3; */
-  /* position: fixed; */
-  /* top: 0; */
 `;
 
 const HeaderInner = styled.div`
@@ -19,7 +16,7 @@ const HeaderInner = styled.div`
   .nav {
     display: flex;
     font-size: 20px;
-
+    
     li {
       padding: 0 20px;
     }

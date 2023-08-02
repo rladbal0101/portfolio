@@ -14,20 +14,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: #F3F3F3;
   }
 
-  h2 {
-    font-size: 28px;
-  }
-  h3 {
-    font-size: 20px;
-  }
-  h4 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
   #root {
     text-align: center;
   }
@@ -41,8 +27,28 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .inner {
-    max-width: 800px;
+    max-width: 860px;
     margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  li {
+    font-size: 14px;
+  }
+  .nav li {
+    font-size: 20px;
   }
 
   .mt-1 {
@@ -65,10 +71,32 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @media screen and (max-width: 768px) {
-    /* .inner {
+    body {
+      font-size: 18px;
+    }
+    .inner {
       max-width: 500px;
-    } */
-    
+    }
+    h2 {
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+    li {
+      font-size: 12px;
+    }
+    .nav li {
+      font-size: 16px;
+    }
+
+
   }
 `;
 

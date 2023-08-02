@@ -3,10 +3,21 @@ import styled from 'styled-components';
 import profileImg from "../images/profile_img.jpg";
 
 const ProfileWrapper = styled.div`
-  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .profile-info {
+      text-align: center;
+      margin: 50px 0 0 0;
+    }
+    .content-title {
+      justify-content: center;
+    }
+  }
 `;
 
 const ProfileImgWrapper = styled.div`
@@ -65,8 +76,8 @@ function Profile(props) {
         <ProfileImgWrapper>
           <ProfileImg />
         </ProfileImgWrapper>
-        <ProfileInfo>
-          <ContactTitle>
+        <ProfileInfo className='profile-info'>
+          <ContactTitle className='content-title'>
             <h2>김 유 미</h2>
             <p className='ml-1'>프론트엔드 개발자</p>
           </ContactTitle>
