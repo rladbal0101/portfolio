@@ -106,14 +106,28 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
   return (
-  <>
-  <GlobalStyle />
-    <Routes>
-      <Route path='/' element={<Layout />}>
-        <Route index element={<Main />} />
-      </Route>
-    </Routes>
-  </>
+    <>
+      {/* 오픈 그래프와 트위터 카드 설정 (링크 프리뷰) */}
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="yumi-portfolio" />
+      <meta property="og:title" content="Piece of your wish" />
+      <meta property="og:description" content="프론트엔드 개발을 꿈꾸는 김유미 입니다." />
+      <meta property="og:image" content="images/profile_img.jpg" />
+      <meta property="og:url" content="https://yumi-portfolio.netlify.app" />
+
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:site" content="Pieceofyourwish" />
+      <meta property="twitter:title" content="Piece of your wish" />
+      <meta property="twitter:description" content="피스오브유어위시는 용산에 있는 플라워샵으로 1:1 맞춤 주문으로 진행되고 있습니다." />
+      <meta property="twitter:image" content="./images/pieceofyourwish.png" />
+      <meta property="twitter:url" content="https://famous-cannoli-c5b4ed.netlify.app" />
+      <GlobalStyle />
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Main />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
