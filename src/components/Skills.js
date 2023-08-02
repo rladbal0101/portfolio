@@ -5,20 +5,10 @@ const SkillsWraaper = styled.div`
   padding: 50px 0;
   border-top: 1px dashed #80d8da;
 
-  h2 {
-    font-size: 30px;
-  }
-
   li {
     display: flex;
     align-items: center;
-
-    h3 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 14px;
-    }
+    text-align: left;
   }
 `;
 
@@ -29,7 +19,7 @@ function Skills(props) {
         <ul className='mt-5'>
           <li className='mt-2'>
             <h3>UI</h3>
-            <p className='ml-1'>HTML, CSS, JavaScript, React, Redux, ajax(Axios), Bootstrap</p>
+            <p className='ml-1'>HTML, CSS, JavaScript(ES6+), React, Redux, ajax(Axios), Bootstrap</p>
           </li>
           <li className='mt-2'>
             <h3>Language</h3>

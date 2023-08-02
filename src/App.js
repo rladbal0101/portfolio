@@ -9,9 +9,23 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'HallymGothic-Regular';
-    font-size: 24px;
+    font-size: 20px;
     box-sizing: border-box;
     background-color: #F3F3F3;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
   }
 
   #root {
@@ -48,6 +62,13 @@ const GlobalStyle = createGlobalStyle`
   }
   .ml-2 {
     margin-left: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* .inner {
+      max-width: 500px;
+    } */
+    
   }
 `;
 
