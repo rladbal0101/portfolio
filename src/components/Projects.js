@@ -35,8 +35,12 @@ const Project = styled.div`
     flex-direction: column;
     
     .project-contents {
-      width: 400px;
       margin: 0 0 20px 0;
+    }
+
+    .site-img-wrapper {
+      width: 320px;
+      height: 220px;
     }
   }
 `;
@@ -135,7 +139,7 @@ function Projects(props) {
             </p>
           </LinkWrapper>
         </ProjectContents>
-        <SiteImgWrapper>
+        <SiteImgWrapper className='site-img-wrapper'>
           <a href='https://family-talk.netlify.app' target='_blank'><FamilyTalkImg /></a>
         </SiteImgWrapper>
       </Project>

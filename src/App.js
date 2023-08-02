@@ -95,8 +95,12 @@ const GlobalStyle = createGlobalStyle`
     .nav li {
       font-size: 16px;
     }
+  }
 
-
+  @media screen and (max-width: 375px) {
+    .inner {
+      max-width: 350px;
+    }
   }
 `;
 
