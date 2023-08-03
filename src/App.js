@@ -7,6 +7,10 @@ import Layout from './components/Layout';
 const GlobalStyle = createGlobalStyle`
   ${reset}
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: 'HallymGothic-Regular';
     font-size: 16px;
@@ -31,6 +35,15 @@ const GlobalStyle = createGlobalStyle`
   .inner {
     max-width: 860px;
     margin: 0 auto;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+
+    :hover {
+      color: #80d8da;
+    }
   }
 
   h2 {

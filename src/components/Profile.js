@@ -51,15 +51,6 @@ const ContactInfoUl = styled.ul`
 
   p {
     font-size: 14px;
-
-    a {
-      color: #333;
-      text-decoration: none;
-
-      &:hover {
-        color: #80d8da;
-      }
-    }
   }
 `;
 
@@ -71,7 +62,7 @@ const Introduce = styled.div`
 
 function Profile(props) {
   return (
-    <div className='mt-3'>
+    <div className='mt-3' id='profile'>
       <ProfileWrapper>
         <ProfileImgWrapper>
           <ProfileImg />

@@ -53,14 +53,9 @@ const LinkWrapper = styled.div`
   display: flex;
 
   a {
-    color: #333;
-    text-decoration: none;
     display: flex;
     align-items: center;
     
-    &:hover {
-      color: #80d8da;
-    }
     svg {
       font-size: 25px;
       margin-right: 5px;
@@ -93,7 +88,7 @@ const FamilyTalkImg = styled.div`
 
 function Projects(props) {
   return (
-    <ProjectsWraaper className='mt-5'>
+    <ProjectsWraaper className='mt-5' id='project'>
       <h2>Projects</h2>
       <Project className='mt-5'>
         <ProjectContents className='project-contents'>
