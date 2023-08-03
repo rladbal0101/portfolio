@@ -102,7 +102,7 @@ function Projects(props) {
           <p className='mt-2'>플라워샵 운영을 위한 제품 소개 및 결제 시스템</p>
           <LinkWrapper className='mt-3'>
             <p>
-              <a href='https://piecewish.netlify.app/' target='_blank'>
+              <a href='https://piecewish.netlify.app' target='_blank'>
                 <HiMiniHome />사이트 바로가기
               </a>
             </p>
@@ -114,7 +114,7 @@ function Projects(props) {
           </LinkWrapper>
         </ProjectContents>
         <SiteImgWrapper>
-          <a href='https://piecewish.netlify.app/' target='_blank'><PieceWishImg /></a>
+          <a href='https://piecewish.netlify.app' target='_blank'><PieceWishImg /></a>
         </SiteImgWrapper>
       </Project>
       <Project className='mt-5'>
