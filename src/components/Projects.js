@@ -113,7 +113,7 @@ function Projects(props) {
             </p>
           </LinkWrapper>
         </ProjectContents>
-        <SiteImgWrapper>
+        <SiteImgWrapper className='site-img-wrapper'>
           <a href='https://piecewish.netlify.app' target='_blank'><PieceWishImg /></a>
         </SiteImgWrapper>
       </Project>

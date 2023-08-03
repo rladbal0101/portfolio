@@ -24,6 +24,10 @@ const HeaderInner = styled.div`
     li + li {
       border-left: 1px solid #333;
     }
+
+    li:last-child {
+      padding-right: 0;
+    }
   }
 `;
 
@@ -31,7 +35,11 @@ const Logo = styled.div`
   font-size: 26px;
 
   :hover {
-    color: aliceblue;
+    /* color: aliceblue; */
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
   }
 `;
 
@@ -52,7 +60,7 @@ function Layout(props) {
       {/* 헤더 영역 */}
       <StyledHeader>
         <HeaderInner className='inner'>
-          <Logo className='cursor-pointer'>Yumi Kim</Logo>
+          <Logo className='cursor-pointer logo'>Yumi Kim</Logo>
           <ul className='nav'>
             <li className='cursor-pointer'>Profile</li>
             <li className='cursor-pointer'>Project</li>

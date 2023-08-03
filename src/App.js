@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'HallymGothic-Regular';
     font-size: 16px;
+    padding: 0 20px;
     box-sizing: border-box;
     background-color: #F3F3F3;
   }
@@ -29,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
   .inner {
     max-width: 860px;
     margin: 0 auto;
+    /* padding: 0 20px; */
   }
 
   h2 {
