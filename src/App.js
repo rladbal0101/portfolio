@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0 20px;
     box-sizing: border-box;
     background-color: #F3F3F3;
+    line-height: 1.5;
   }
 
   #root {
@@ -30,7 +31,6 @@ const GlobalStyle = createGlobalStyle`
   .inner {
     max-width: 860px;
     margin: 0 auto;
-    /* padding: 0 20px; */
   }
 
   h2 {
@@ -89,7 +89,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 16px;
     }
     p {
-      font-size: 12px;
+      font-size: 14px;
     }
     li {
       font-size: 12px;
@@ -102,6 +102,9 @@ const GlobalStyle = createGlobalStyle`
   @media screen and (max-width: 375px) {
     .inner {
       max-width: 350px;
+    }
+    p {
+      font-size: 12px;
     }
   }
 `;

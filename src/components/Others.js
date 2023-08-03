@@ -7,13 +7,18 @@ const OtherWraaper = styled.div`
 
 `;
 
-function Other(props) {
+const Other = styled.div`
+
+`;
+
+function Others(props) {
   return (
     <OtherWraaper className='mt-5'>
       <h2>Other Experience</h2>
-      
+      <Other className='mt-5'>
+      </Other>
     </OtherWraaper>
   );
 }
 
-export default Other;
+export default Others;
