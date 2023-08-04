@@ -58,11 +58,12 @@ function Layout(props) {
   return (
     <>
       {/* 헤더 영역 */}
-      <StyledHeader>
+      <StyledHeader id='top'>
         <HeaderInner className='inner'>
           <Logo className='cursor-pointer logo'>Yumi Kim</Logo>
           <ul className='nav'>
             <li className='cursor-pointer'><a href='#profile'>Profile</a></li>
+            <li className='cursor-pointer'><a href='#introduce'>Introduce</a></li>
             <li className='cursor-pointer'><a href='#project'>Project</a></li>
           </ul>
         </HeaderInner>

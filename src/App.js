@@ -47,42 +47,45 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    font-size: 1.75rem; // 28px
+    font-size: 28px;
   }
   h3 {
-    font-size: 1.25rem; // 20px
+    font-size: 20px;
   }
   h4 {
-    font-size: 1.125rem; // 18px
+    font-size: 18px;
   }
 
   p {
     // font-size: 16px;
   }
   li {
-    font-size: 0.875rem; // 14px
+    font-size: 14px;
   }
   .nav li {
-    font-size: 1.25rem; // 20px
+    font-size: 20px;
   }
 
   .mt-1 {
-    margin-top: 0.625rem; // 10px
+    margin-top: 10px;
   }
   .mt-2 {
-    margin-top: 1.25rem; // 20px
+    margin-top: 20px;
   }
   .mt-3 {
-    margin-top: 1.875rem; // 30px
+    margin-top: 30px;
+  }
+  .mb-3 {
+    margin-bottom: 30px;
   }
   .mt-5 {
-    margin-top: 3.125rem; // 50px
+    margin-top: 50px;
   }
   .ml-1 {
-    margin-left: 0.625rem; // 10px
+    margin-left: 10px;
   }
   .ml-2 {
-    margin-left: 1.25rem; // 20px
+    margin-left: 20px;
   }
 
   @media screen and (max-width: 768px) {
@@ -105,7 +108,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 14px;
     }
     li {
-      font-size: 12px;
+      font-size: 13px;
     }
     .nav li {
       font-size: 16px;

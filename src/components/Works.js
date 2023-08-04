@@ -42,7 +42,7 @@ function Works(props) {
       <h2>Work</h2>
       {
         dataWork.reverse().map(work =>
-          <Work className='mt-5'>
+          <Work className='mt-3'>
             <WorkTitleContainer>
               <CompanyText>{work.company}</CompanyText>
               <PositionText>{work.position}</PositionText>

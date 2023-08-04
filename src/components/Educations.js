@@ -20,10 +20,10 @@ const ContentText = styled.ul`
 `;
 
 function Educations(props) {
+
   return (
     <EducationWraaper className='mt-5'>
       <h2>Education</h2>
-      
       {
         dataEducation.reverse().map(education => 
           <Education className='mt-5'>
