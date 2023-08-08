@@ -7,11 +7,15 @@ import { RxNotionLogo } from "react-icons/rx";
 const ProfileWrapper = styled.div`
   display: flex;
   justify-content: center;
-  
+  padding-top: 85px;
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    
+
+    &#profile {
+      padding-top: 65px;
+    }
     .profile-info {
       text-align: center;
       margin: 50px 0 0 0;
@@ -26,8 +30,8 @@ const ProfileWrapper = styled.div`
 `;
 
 const ProfileImgWrapper = styled.div`
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   margin-top: 20px;
 `;
 
@@ -78,11 +82,9 @@ const ContactInfoUl = styled.ul`
   }
 `;
 
-
-
 function Profile(props) {
   return (
-    <ProfileWrapper className='mt-3' id='profile'>
+    <ProfileWrapper id='profile'>
       <ProfileImgWrapper>
         <ProfileImg />
       </ProfileImgWrapper>

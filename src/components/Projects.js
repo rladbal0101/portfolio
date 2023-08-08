@@ -4,10 +4,15 @@ import { BsGithub } from "react-icons/bs";
 import { HiMiniHome } from "react-icons/hi2";
 import pieceWish from "../images/PieceWish.jpg";
 import familyTalk from "../images/FamilyTalk.jpg";
+import portfolio from "../images/Portfolio.jpg";
 
 const ProjectsWraaper = styled.div`
   padding: 50px 0;
   border-top: 1px dashed #80d8da;
+
+  &#project {
+    padding-top: 65px;
+  }
 `;
 
 const Project = styled.div`
@@ -86,6 +91,15 @@ const FamilyTalkImg = styled.div`
   background-position: center;
 `;
 
+const PortFolioImg = styled.div`
+  width: 100%;
+  height: 100%;
+  background-image: url(${portfolio});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+`; 
+
 function Projects(props) {
   return (
     <ProjectsWraaper className='mt-5' id='project'>
@@ -143,6 +157,32 @@ function Projects(props) {
         </ProjectContents>
         <SiteImgWrapper className='site-img-wrapper'>
           <a href='https://family-talk.netlify.app' target='_blank'><FamilyTalkImg /></a>
+        </SiteImgWrapper>
+      </Project>
+      <Project className='mt-5'>
+        <ProjectContents className='project-contents'>
+          <h3>포트폴리오</h3>
+          <p className='mt-1'>프로젝트 기간 : 2023.07.28 - 2023.08.04</p>
+          <p className='mt-1'>개인 포트폴리오&#40;이력서, 자기소개서&#41;를 위한 웹페이지</p>
+          <ul className='mt-1'>
+            <li>디자인부터 기획, 개발, 배포 진행</li>
+            <li>리액트를 이용하여 페이지 구현</li>
+          </ul>
+          <LinkWrapper className='mt-2'>
+            <p>
+              <a href='https://yumi-portfolio.netlify.app'>
+                <HiMiniHome />사이트 바로가기
+              </a>
+            </p>
+            <p className='ml-2'>
+              <a href='https://github.com/rladbal0101/portfolio.git' target='_blank'>
+                <BsGithub />GitHub 바로가기
+              </a>
+            </p>
+          </LinkWrapper>
+        </ProjectContents>
+        <SiteImgWrapper className='site-img-wrapper'>
+          <a href='https://yumi-portfolio.netlify.app'><PortFolioImg /></a>
         </SiteImgWrapper>
       </Project>
     </ProjectsWraaper>

@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const IntroduceWrapper = styled.div`
   padding: 50px 0;
   border-top: 1px dashed #80d8da;
+
+  &#introduce {
+    padding-top: 65px;
+  }
   `;
 
 const IntroduceParagraph = styled.div`

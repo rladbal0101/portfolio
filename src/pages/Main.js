@@ -39,8 +39,7 @@ function Main(props) {
       <Projects />
       <Others />
       <Skills />
-
-      <Scroll href='#top'>
+      <Scroll href='#'>
         <BsArrowUpCircleFill />
       </Scroll>
     </div>

@@ -5,6 +5,10 @@ const SkillsWraaper = styled.div`
   padding: 50px 0;
   border-top: 1px dashed #80d8da;
 
+  &#skill {
+    padding-top: 65px;
+  }
+
   li {
     display: flex;
     align-items: center;
@@ -21,7 +25,7 @@ const SkillsWraaper = styled.div`
 
 function Skills(props) {
   return (
-    <SkillsWraaper className='mt-5'>
+    <SkillsWraaper className='mt-5' id='skill'>
       <h2>Skills</h2>
         <ul className='mt-5'>
           <li className='mt-2'>

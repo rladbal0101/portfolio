@@ -4,20 +4,25 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.div`
   width: 100%;
-  height: 80px;
+  height: 65px;
+  border-bottom: 1px solid #8da8d8;
+  position: fixed;
+  background-color: #f3f3f3;
+  top: 0;
 `;
 
 const HeaderInner = styled.div`
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 
   .nav {
     display: flex;
-    font-size: 20px;
     
     li {
+      font-size: 14px;
       padding: 0 20px;
     }
 
@@ -29,6 +34,18 @@ const HeaderInner = styled.div`
       padding-right: 0;
     }
   }
+
+  @media screen and (max-width: 768px) {
+
+    .logo {
+      font-size: 22px;
+    }
+
+    .nav li {
+      font-size: 12px;
+      padding: 0 10px;
+    }
+  }
 `;
 
 const Logo = styled.div`
@@ -37,14 +54,6 @@ const Logo = styled.div`
   :hover {
     /* color: aliceblue; */
   }
-
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-`;
-
-const StyledOutlet = styled(Outlet)`
-  margin-top: 80px;
 `;
 
 const StyledFooter = styled.div`
@@ -64,12 +73,16 @@ function Layout(props) {
           <ul className='nav'>
             <li className='cursor-pointer'><a href='#profile'>Profile</a></li>
             <li className='cursor-pointer'><a href='#introduce'>Introduce</a></li>
+            <li className='cursor-pointer'><a href='#education'>Educations</a></li>
+            <li className='cursor-pointer'><a href='#work'>Works</a></li>
             <li className='cursor-pointer'><a href='#project'>Project</a></li>
+            <li className='cursor-pointer'><a href='#other'>Others</a></li>
+            <li className='cursor-pointer'><a href='#skill'>Skills</a></li>
           </ul>
         </HeaderInner>
       </StyledHeader>
 
-      <StyledOutlet />
+      <Outlet />
 
       {/* 푸터 영역 */}
       <StyledFooter>

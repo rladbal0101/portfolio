@@ -5,6 +5,10 @@ import dataWork from "../dataWork.json";
 const WorkWraaper = styled.div`
   padding: 50px 0;
   border-top: 1px dashed #80d8da;
+
+  &#work {
+    padding-top: 65px;
+  }
 `;
 
 const Work = styled.div`
@@ -16,41 +20,33 @@ const WorkTitleContainer = styled.div`
   align-items: flex-end;
 `;
 
-const CompanyText = styled.h3`
-
-`;
 const PositionText = styled.p`
   margin-left: 10px;
 `;
 
-const PeriodText = styled.p`
-
-`;
-const FieldText = styled.p`
-`;
-
 const ContentText = styled.ul`
-  li {
-    padding-left: 10px;
+  list-style-type: '- ';
 
+  li {
+    margin-left: 10px;
   }
 `;
 
 function Works(props) {
   return (
-    <WorkWraaper className='mt-5'>
+    <WorkWraaper className='mt-5' id='work'>
       <h2>Work</h2>
       {
         dataWork.reverse().map(work =>
           <Work className='mt-3'>
             <WorkTitleContainer>
-              <CompanyText>{work.company}</CompanyText>
+              <h3>{work.company}</h3>
               <PositionText>{work.position}</PositionText>
             </WorkTitleContainer>
-            <PeriodText>{work.period}</PeriodText>
-            <FieldText>직무 : {work.field}</FieldText>
+            <p>{work.period}</p>
+            <p>직무 : {work.field}</p>
             <ContentText>담당업무 : 
-              {work.content.map(content => <li>- {content}</li>)}  
+              {work.content.map(content => <li>{content}</li>)}  
             </ContentText>
           </Work>
         )

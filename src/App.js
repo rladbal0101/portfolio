@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     padding: 0 20px;
     box-sizing: border-box;
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     line-height: 1.5;
   }
 
@@ -75,6 +75,12 @@ const GlobalStyle = createGlobalStyle`
   .mt-3 {
     margin-top: 30px;
   }
+  .mb-1 {
+    margin-bottom: 10px;
+  }
+  .mb-2 {
+    margin-bottom: 20px;
+  }
   .mb-3 {
     margin-bottom: 30px;
   }
@@ -128,7 +134,6 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <>
-      
       <GlobalStyle />
       <Routes>
         <Route path='/' element={<Layout />}>
