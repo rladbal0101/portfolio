@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BsGithub } from "react-icons/bs";
-import { HiMiniHome } from "react-icons/hi2";
+import dataProject from "../dataProject.json";
 import pieceWish from "../images/PieceWish.jpg";
 import familyTalk from "../images/FamilyTalk.jpg";
 import portfolio from "../images/Portfolio.jpg";
+
+import { BsGithub } from "react-icons/bs";
+import { HiMiniHome } from "react-icons/hi2";
+
 
 const ProjectsWraaper = styled.div`
   padding: 50px 0;
@@ -25,7 +28,7 @@ const Project = styled.div`
   align-items: center;
 
   ul {
-    list-style-type: disc;
+    list-style-type: "- ";
     padding-left: 20px;
 
     li {
@@ -43,6 +46,10 @@ const Project = styled.div`
       margin: 0 0 20px 0;
     }
 
+    .link-wrapper {
+      justify-content: center;
+    }
+
     .site-img-wrapper {
       width: 320px;
       height: 220px;
@@ -52,6 +59,10 @@ const Project = styled.div`
 
 const ProjectContents = styled.div`
   margin: 0 20px 0 0;
+
+  & > p {
+    margin-top: 10px;
+  }
 `;
 
 const LinkWrapper = styled.div`
@@ -104,12 +115,12 @@ function Projects(props) {
   return (
     <ProjectsWraaper className='mt-5' id='project'>
       <h2>Projects</h2>
-      <Project className='mt-5'>
+      {/* <Project className='mt-5'>
         <ProjectContents className='project-contents'>
           <h3>Piece of your wish</h3>
+          <p className='mt-1'>플라워샵 운영을 위한 제품 소개 및 결제 시스템</p>
           <p className='mt-1'>개발기간 : 2023.04.20 - 2023.05.03</p>
           <p className='mt-1'>개발인원 : 1명</p>
-          <p className='mt-1'>플라워샵 운영을 위한 제품 소개 및 결제 시스템</p>
           <ul className='mt-1'>
             <li>디자인부터 기획, 개발, 배포 진행</li>
             <li>HTML, CSS, JS를 활용한 페이지 구현</li>
@@ -187,7 +198,49 @@ function Projects(props) {
         <SiteImgWrapper className='site-img-wrapper'>
           <a href='https://yumi-portfolio.netlify.app'><PortFolioImg /></a>
         </SiteImgWrapper>
-      </Project>
+      </Project> */}
+
+      {
+        dataProject.reverse().map(project => 
+          <Project className='mt-5'>
+            <ProjectContents className='project-contents'>
+              <h3>{project.name}</h3>
+              <p>{project.introduction}</p>
+              <p>개발기간 : {project.period}</p>
+              <p>개발인원 : {project.number}명</p>
+              <p>목표 : </p>
+              <ul className='mt-1'>
+                {project.objectives.map(objective => <li>{objective}</li>)}
+              </ul>
+              <p>기능 : </p>
+              <ul className='mt-1'>
+                {project.skills.map(skill => <li>{skill}</li>)}
+              </ul>
+              <LinkWrapper className='mt-3 link-wrapper'>
+                <p>
+                  <a href={project.url.map(link => link.home)} target='_blank'>
+                    <HiMiniHome />사이트 바로가기
+                  </a>
+                </p>
+                <p className='ml-2'>
+                  <a href={project.url.map(link => link.gitHub)} target='_blank'>
+                    <BsGithub />GitHub 바로가기
+                  </a>
+                </p>
+              </LinkWrapper>
+            </ProjectContents>
+            {/* <SiteImgWrapper className='site-img-wrapper'>
+              {
+                project.url.map(link => 
+                  <a href={link.home}>
+                    <img src={link.image} />
+                  </a>
+                )
+              }
+            </SiteImgWrapper> */}
+          </Project>
+        )
+      }
     </ProjectsWraaper>
   );
 }

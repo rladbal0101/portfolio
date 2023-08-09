@@ -56,14 +56,13 @@ const HeaderInner = styled.div`
 
 const Logo = styled.div`
   font-size: 26px;
-
-  :hover {
-    /* color: aliceblue; */
-  }
 `;
 
-const NavWrapper =styled.div`
-  /* width: 100%; */
+const NavWrapper = styled.div`
+  @media screen and (max-width: 440px) {
+    width: 100%;
+    overflow-x: scroll;
+  }
 `;
 
 const StyledFooter = styled.div`
@@ -90,6 +89,13 @@ const FooterInner = styled.div`
     li + li {
       margin-left: 10px;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
   }
 `;
 

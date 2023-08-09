@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import dataEducation from "../dataEducation.json";
-import { BsNodePlus, BsThreeDots } from "react-icons/bs";
+import { BsThreeDots } from "react-icons/bs";
 
 const EducationWraaper = styled.div`
   padding: 50px 0;

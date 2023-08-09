@@ -1,0 +1,80 @@
+[
+  {
+    "id": "0",
+    "name": "Piece of your wish",
+    "period": "2023.04.23 - 2023.05.03",
+    "number": "1",
+    "introduction": "플라워샵 운영을 위한 제품 소개 및 결제 시스템",
+    "objectives" : [
+      "웹페이지 플라워샵을 운영하여 고객들에게 다양한 종류의 꽃과 꽃다발을 제공",
+      "편리한 결제 시스템을 통해 원활한 구매 경험을 제공"
+    ],
+    "skills": [
+      "다양한 종류의 꽃다발과 부케 등을 카테고리화하여 제품 카탈로그를 구성",
+      "고객은 원하는 꽃, 색상, 디자인 등을 선택하여 맞춤형 꽃다발을 주문할 수 있도록 커스터마이징 기능을 제공",
+      "GSAP & ScrollToPlugin, SWIPER, ScrollMagic 등 다양한 라이브러리를 사용하여 페이지 구현",
+      "다양한 기기에서 웹페이지를 편리하게 이용할 수 있도록 모바일 반응형 디자인을 적용"
+    ],
+    "environment": "HTML, CSS, JavaScript",
+    "url": [
+      {
+        "home": "https://piecewish.netlify.app",
+        "gitHub": "https://github.com/rladbal0101/PieceWish.git",
+        "image": "https://ibb.co/txWZMCK"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Family Talk",
+    "period": "2023.06.26 - 2023.7.11",
+    "number": "4",
+    "introduction": "가족들의 일상 공유 시스템",
+    "objectives" : [
+      "가족 구성원들이 일상을 공유하고 소통하는 편리한 플랫폼을 제공하여 가족 간의 유대감을 강화하고 협력을 도모하는 것",
+      "다양한 기능을 통해 가족들의 생활을 더욱 편리하고 즐겁게 관리할 수 있는 환경을 제공"
+    ],
+    "skills": [
+      "가족 구성원들 간에 실시간 채팅을 통해 소통할 수 있는 기능을 제공",
+      "가족 구성원들이 중요한 일정을 공유하고 관리할 수 있는 캘린더 기능을 제공",
+      "가족 구성원들이 사진을 업로드하고 공유할 수 있는 기능을 제공",
+      "날씨 API를 활용하여 현재 위치의 실시간 날씨 정보를 표시",
+      "My JSON Server를 활용하여 간단한 API 서버를 구축하여 사용자 정보를 저장하고 관리",
+      "저장된 데이터를 활용하여 가족 구성원들의 생일 디데이를 계산하고, 다가오는 생일 중 가장 가까운 것을 화면에 표시",
+      "토스페이먼츠를 이용하여 결제 위젯을 시스템에 연동"
+    ],
+    "environment": "React App",
+    "url": [
+      {
+        "home": "https://family-talk.netlify.app",
+        "gitHub": "https://github.com/evejin9/Family-Talk.git",
+        "image": "https://ibb.co/zGdJwX1"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "YUMI's Portfolio",
+    "period": "2023.07.28 - 2023.08.10",
+    "number": "1",
+    "introduction": "",
+    "objectives" : [
+      "나만의 포트폴리오 사이트를 통해 프론트엔드 개발 역량과 능력을 효과적으로 전달",
+      "포트폴리오 사이트를 개발하는 과정에서 HTML, CSS, JavaScript 등 웹 개발 기술과 언어를 활용한 웹 페이지를 구현",
+      "다양한 디바이스와 화면 크기에 대응하는 반응형 웹 디자인을 구현"
+    ],
+    "skills": [
+      "다양한 프로젝트와 이력 및 자기소개 등을 나열",
+      "포트폴리오 사이트를 다양한 디바이스와 화면 크기에 맞춰서 반응형으로 디자인하여 사용자의 편리성을 확대"
+    ],
+    "environment": "React App",
+    "url": [
+      {
+        "home": "https://yumi-portfolio.netlify.app",
+        "gitHub": "https://github.com/rladbal0101/portfolio.git",
+        "image": "https://ibb.co/kmCRj9X"
+      }
+    ]
+  }
+  
+]
