@@ -107,7 +107,8 @@ function Projects(props) {
       <Project className='mt-5'>
         <ProjectContents className='project-contents'>
           <h3>Piece of your wish</h3>
-          <p className='mt-1'>프로젝트 기간 : 2023.04.20 - 2023.05.03</p>
+          <p className='mt-1'>개발기간 : 2023.04.20 - 2023.05.03</p>
+          <p className='mt-1'>개발인원 : 1명</p>
           <p className='mt-1'>플라워샵 운영을 위한 제품 소개 및 결제 시스템</p>
           <ul className='mt-1'>
             <li>디자인부터 기획, 개발, 배포 진행</li>
@@ -134,7 +135,8 @@ function Projects(props) {
       <Project className='mt-5'>
         <ProjectContents className='project-contents'>
           <h3>Family Talk</h3>
-          <p className='mt-1'>프로젝트 기간 : 2023.06.26 - 2023.07.11</p>
+          <p className='mt-1'>개발기간 : 2023.06.26 - 2023.07.11</p>
+          <p className='mt-1'>개발인원 : 4명</p>
           <p className='mt-1'>가족들의 일상 공유 시스템</p>
           <ul className='mt-1'>
             <li>날씨 api를 이용한 현재 위치의 실시간 날씨 정보 구현</li>
@@ -162,7 +164,8 @@ function Projects(props) {
       <Project className='mt-5'>
         <ProjectContents className='project-contents'>
           <h3>포트폴리오</h3>
-          <p className='mt-1'>프로젝트 기간 : 2023.07.28 - 2023.08.04</p>
+          <p className='mt-1'>개발기간 : 2023.07.28 - 2023.08.04</p>
+          <p className='mt-1'>개발인원 : 1명</p>
           <p className='mt-1'>개인 포트폴리오&#40;이력서, 자기소개서&#41;를 위한 웹페이지</p>
           <ul className='mt-1'>
             <li>디자인부터 기획, 개발, 배포 진행</li>
