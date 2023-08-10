@@ -8,8 +8,12 @@ const StyledHeader = styled.div`
   height: 65px;
   position: fixed;
   background-color: #f3f3f3;
+  border-bottom: 1px solid #8da8d8;
   top: 0;
   left: 0;
+  @media screen and (max-width: 440px) {
+    border-bottom: 0;
+  }
 `;
 
 const HeaderInner = styled.div`
@@ -66,6 +70,7 @@ const NavWrapper = styled.div`
     /* overflow-x: scroll; */
     overflow-x: auto;
     white-space: nowrap;
+    padding-bottom: 5px;
     border-bottom: 1px solid #8da8d8;
   }
 `;
