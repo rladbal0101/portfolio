@@ -97,6 +97,7 @@ const GlobalStyle = createGlobalStyle`
   @media screen and (max-width: 768px) {
     body {
       font-size: 14px;
+      padding: 0 15px;
     }
     .inner {
       max-width: 500px;

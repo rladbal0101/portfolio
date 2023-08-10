@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import dataProject from "../dataProject.json";
 import pieceWish from "../images/PieceWish.jpg";
@@ -112,6 +112,13 @@ const PortFolioImg = styled.div`
 `; 
 
 function Projects(props) {
+  const [sortProjectData, setSortProjectData] = useState([]);
+
+  useEffect(() => {
+    const reverseData = dataProject.reverse();
+    setSortProjectData(reverseData);
+  }, []);
+
   return (
     <ProjectsWraaper className='mt-5' id='project'>
       <h2>Projects</h2>
@@ -201,7 +208,7 @@ function Projects(props) {
       </Project> */}
 
       {
-        dataProject.reverse().map(project => 
+        sortProjectData.map(project => 
           <Project className='mt-5'>
             <ProjectContents className='project-contents'>
               <h3>{project.name}</h3>

@@ -4,19 +4,21 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.div`
   width: calc(100% - 40px);
+  width: 100%;
   height: 65px;
-  border-bottom: 1px solid #8da8d8;
   position: fixed;
   background-color: #f3f3f3;
   top: 0;
+  left: 0;
 `;
 
 const HeaderInner = styled.div`
   height: 100%;
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
   .nav {
     display: flex;
     
@@ -61,7 +63,10 @@ const Logo = styled.div`
 const NavWrapper = styled.div`
   @media screen and (max-width: 440px) {
     width: 100%;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
+    overflow-x: auto;
+    white-space: nowrap;
+    border-bottom: 1px solid #8da8d8;
   }
 `;
 
@@ -95,13 +100,11 @@ const FooterInner = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    
   }
 `;
 
 function Layout(props) {
   const thisYear = new Date;
-  console.log();
 
   return (
     <>
@@ -138,8 +141,6 @@ function Layout(props) {
               <p>Email</p>
               <p>kyumi16@gmail.com</p>
             </li>
-            {/* <li>Phone : 010-2990-5887</li> */}
-            {/* <li>Email : kyumi16@gmail.com</li> */}
           </ul>
         </FooterInner>
       </StyledFooter>

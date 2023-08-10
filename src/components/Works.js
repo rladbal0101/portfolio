@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import dataWork from "../dataWork.json";
 
@@ -33,11 +33,18 @@ const ContentText = styled.ul`
 `;
 
 function Works(props) {
+  const [sortWorkData, setSortWorkData] = useState([]);
+
+  useEffect(() => {
+    const reverseData = dataWork.reverse();
+    setSortWorkData(reverseData);
+  }, []);
+  
   return (
     <WorkWraaper className='mt-5' id='work'>
       <h2>Work</h2>
       {
-        dataWork.reverse().map(work =>
+        sortWorkData.map(work =>
           <Work className='mt-3'>
             <WorkTitleContainer>
               <h3>{work.company}</h3>

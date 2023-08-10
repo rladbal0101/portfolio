@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import dataEducation from "../dataEducation.json";
 import { BsThreeDots } from "react-icons/bs";
@@ -40,12 +40,19 @@ const ResultText = styled.ul`
 `;
 
 function Educations(props) {
+  const [sortEducationData, setSortEducationData] = useState([]);
+
+  console.log(dataEducation);
+  useEffect(() => {
+    const reverseData = dataEducation.reverse();
+    setSortEducationData(reverseData);
+  }, []);
 
   return (
     <EducationWraaper className='mt-5' id='education'>
       <h2>Education</h2>
       {
-        dataEducation.reverse().map(education => 
+        sortEducationData.map(education => 
           <Education className='mt-5' key={education.id}>
             <h3 className='mb-1'>{education.title}</h3>
             <p>교육기간 : {education.period}</p>
