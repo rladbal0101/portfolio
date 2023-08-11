@@ -20,7 +20,7 @@
       {
         "home": "https://piecewish.netlify.app",
         "gitHub": "https://github.com/rladbal0101/PieceWish.git",
-        "image": "https://ibb.co/txWZMCK"
+        "image": "https://magnificent-echinodon-80d.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F32d0e85f-fb02-4354-8ec3-7d46e77873bb%2FPieceWish.jpg?table=block&id=19e865f3-61c1-4e1c-a42a-16cc73ad0ac9&spaceId=0c1139b0-c5f0-406e-94f8-cbf7da77958b&width=1230&userId=&cache=v2"
       }
     ]
   },
@@ -41,15 +41,14 @@
       "날씨 API를 활용하여 현재 위치의 실시간 날씨 정보를 표시",
       "My JSON Server를 활용하여 간단한 API 서버를 구축하여 사용자 정보를 저장하고 관리",
       "저장된 데이터를 활용하여 가족 구성원들의 생일 디데이를 계산하고, 다가오는 생일 중 가장 가까운 것을 화면에 표시",
-      "토스페이먼츠를 이용하여 결제 위젯을 시스템에 연동",
-      "사이트 ID: aa / PW: 1234"
+      "토스페이먼츠를 이용하여 결제 위젯을 시스템에 연동"
     ],
     "environment": "React App",
     "url": [
       {
         "home": "https://family-talk.netlify.app",
         "gitHub": "https://github.com/evejin9/Family-Talk.git",
-        "image": "https://ibb.co/zGdJwX1"
+        "image": "https://magnificent-echinodon-80d.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7ce1fb14-f68c-4d0f-a1d1-ac87b5a3908f%2FFamilyTalk.jpg?table=block&id=b448d4b9-b5be-4f09-a184-ac857ee5886b&spaceId=0c1139b0-c5f0-406e-94f8-cbf7da77958b&width=1230&userId=&cache=v2"
       }
     ]
   },
@@ -74,7 +73,7 @@
       {
         "home": "https://yumi-portfolio.netlify.app",
         "gitHub": "https://github.com/rladbal0101/portfolio.git",
-        "image": "https://ibb.co/kmCRj9X"
+        "image": "https://magnificent-echinodon-80d.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F107a7f63-0de1-45c6-9c2e-a3478d3d1dd3%2Fyumi-portfolio.png?table=block&id=a9913ffd-ecc7-4626-ad00-6dbc5dd0c8f3&spaceId=0c1139b0-c5f0-406e-94f8-cbf7da77958b&width=2000&userId=&cache=v2"
       }
     ]
   }

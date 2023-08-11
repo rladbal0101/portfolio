@@ -115,7 +115,7 @@ function Profile(props) {
               <a href='https://github.com/rladbal0101' target='_blank'><BsGithub />GitHub</a>
             </h4>
             <h4>
-              <a href='https://www.notion.so/52656b0ab27741e2b2fa50df4ad632a0?pvs=4' target='_blank'><RxNotionLogo />Notion</a>
+              <a href='https://magnificent-echinodon-80d.notion.site/52656b0ab27741e2b2fa50df4ad632a0?pvs=4' target='_blank'><RxNotionLogo />Notion</a>
             </h4>
           </li>
         </ContactInfoUl>
