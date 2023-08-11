@@ -17,7 +17,7 @@ const Work = styled.div`
 
 const WorkTitleContainer = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 `;
 
 const PositionText = styled.p`
