@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import dataEducation from "../dataEducation.json";
-import { BsThreeDots } from "react-icons/bs";
 
 const EducationWraaper = styled.div`
   padding: 50px 0;
@@ -20,7 +19,7 @@ const Education = styled.div`
   }
 `;
 
-const CurriculumText = styled.ul`
+const TextContainer = styled.ul`
   list-style-type: '- ';
   
   li {
@@ -28,21 +27,9 @@ const CurriculumText = styled.ul`
   }
 `;
 
-const ResultText = styled.ul`
-  font-size: 25px;
-  /* list-style-type: '- '; */
-  list-style-type: circle;
-
-  li {
-    margin-left: 20px;
-  }
-
-`;
-
 function Educations(props) {
   const [sortEducationData, setSortEducationData] = useState([]);
 
-  console.log(dataEducation);
   useEffect(() => {
     const reverseData = dataEducation.reverse();
     setSortEducationData(reverseData);
@@ -56,15 +43,12 @@ function Educations(props) {
           <Education className='mt-5' key={education.id}>
             <h3 className='mb-1'>{education.title}</h3>
             <p>교육기간 : {education.period}</p>
-            <CurriculumText className='mb-1'>교육내용 : 
+            <TextContainer className='mb-1'>교육내용 : 
               {education.curriculum.map(curriculum => <li>{curriculum}</li>)}                
-            </CurriculumText>
-            <ResultText className='mb-1'><BsThreeDots />
+            </TextContainer>
+            <TextContainer className='mb-1'>교육활동 : 
               {education.result.map(result => <li>{result}</li>)}                
-            </ResultText>
-            {/* <p>교육활동 : 
-              <p>{education.content}</p>
-            </p> */}
+            </TextContainer>
           </Education>
         )
       }

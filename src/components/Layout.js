@@ -89,15 +89,21 @@ const FooterInner = styled.div`
   align-items: center;
 
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   ul {
     display: flex;
     text-align: left;
 
+    li {
+      display: flex;
+      p + p {
+        margin-left: 10px;
+      }
+    }
     li + li {
-      margin-left: 10px;
+      margin-left: 50px;
     }
   }
 
@@ -105,6 +111,19 @@ const FooterInner = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+
+    p {
+      font-size: 12px;
+    }
+
+    ul {
+      li {
+        display: list-item;
+        p + p {
+          margin-left: 0;
+        }
+      }
+    }
   }
 `;
 
@@ -139,11 +158,11 @@ function Layout(props) {
           <p>&copy;{thisYear.getFullYear()} by Yumi Kim.</p>
           <ul>
             <li>
-              <p>Phone</p>
+              <p>Phone.</p>
               <p>010-2990-5887</p>
             </li>
             <li>
-              <p>Email</p>
+              <p>Email.</p>
               <p>kyumi16@gmail.com</p>
             </li>
           </ul>
