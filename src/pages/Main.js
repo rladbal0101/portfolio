@@ -9,6 +9,7 @@ import Skills from '../components/Skills';
 
 import { BsArrowUpCircleFill } from "react-icons/bs";
 import styled from 'styled-components';
+import Contact from '../components/Contact';
 
 const Scroll = styled.a`
 
@@ -32,7 +33,8 @@ function Main(props) {
       {/* 
         제목, 직무명, 인적사항, 자기소개, 학력 및 교육사항, 경력, 프로젝트, 직무 관련 활동, 기타 경력 및 경험, 스킬
       */}
-      <Profile />
+      {/* <Profile /> */}
+      <Contact />
       <Introduce />
       <Educations />
       <Works />

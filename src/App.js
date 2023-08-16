@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #root {
-    text-align: center;
+    /* text-align: center; */
   }
 
   * {
@@ -46,11 +46,17 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  h2 {
+  h1 {
     font-size: 28px;
+    font-weight: 700;
+    color: #D9730D;
+  }
+  h2 {
+    font-size: 24px;
   }
   h3 {
     font-size: 20px;
+    font-size: 18px;
   }
   h4 {
     font-size: 18px;
@@ -102,17 +108,21 @@ const GlobalStyle = createGlobalStyle`
     .inner {
       max-width: 500px;
     }
-    h2 {
+    h1 {
       font-size: 25px;
+    }
+    h2 {
+      font-size: 22px;
     }
     h3 {
       font-size: 18px;
+      font-size: 16px;
     }
     h4 {
       font-size: 16px;
     }
     p {
-      font-size: 14px;
+      font-size: 13px;
     }
     li {
       font-size: 13px;

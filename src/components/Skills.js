@@ -10,15 +10,16 @@ const SkillsWraaper = styled.div`
   }
 
   li {
-    display: flex;
-    align-items: center;
-    text-align: left;
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: left; */
 
     h3 {
+      font-weight: 700;
       white-space : nowrap;
       padding: 0 8px;
-      background-color: rgba(128, 216, 218, 0.2);
-      border-radius: 20px;
+      /* background-color: rgba(128, 216, 218, 0.2);
+      border-radius: 20px; */
     }
   }
 `;
@@ -26,7 +27,7 @@ const SkillsWraaper = styled.div`
 function Skills(props) {
   return (
     <SkillsWraaper className='mt-5' id='skill'>
-      <h2>Skills</h2>
+      <h1>Skills</h1>
         <ul className='mt-5'>
           <li className='mt-2'>
             <h3>UI</h3>

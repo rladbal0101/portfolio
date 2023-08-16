@@ -30,8 +30,9 @@ const IntroduceParagraph = styled.div`
 function Introduce(props) {
   return (
     <IntroduceWrapper className='mt-5' id='introduce'>
+      <h1>Introduce</h1>
       <IntroduceParagraph>
-        <h2>안녕하세요&#44;</h2>
+        <h2 className='mt-5'>안녕하세요&#44;</h2>
         <p className='intro'>
           프론트엔드 개발자로서의 꿈을 향해 노력하고 있는 김유미입니다. 저는 수 많은 전공 과목들 중 전공선택 과목이었던 웹 서버 프로그래밍 수업에서 큰 흥미를 느끼게 되었습니다. 작성한 코드들이 실제 웹 페이지로 구현되어 상호작용하는 것을 보며 느낀 창조적인 성취감과 코드가 실제로 동작하는 것을 보며 느낀 재미는 저에게 큰 자극이 되었습니다.
         </p>

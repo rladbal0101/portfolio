@@ -5,8 +5,8 @@ import { BsGithub } from "react-icons/bs";
 import { RxNotionLogo } from "react-icons/rx";
 
 const ProfileWrapper = styled.div`
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   padding-top: 85px;
 
   @media screen and (max-width: 768px) {
@@ -85,9 +85,10 @@ const ContactInfoUl = styled.ul`
 function Profile(props) {
   return (
     <ProfileWrapper id='profile'>
-      <ProfileImgWrapper>
+      <h1>Contact</h1>
+      {/* <ProfileImgWrapper>
         <ProfileImg />
-      </ProfileImgWrapper>
+      </ProfileImgWrapper> */}
       <ProfileInfo className='profile-info'>
         <ContactTitle className='content-title'>
           <h2>김 유 미</h2>
@@ -102,14 +103,14 @@ function Profile(props) {
             <h4>E-mail</h4>
             <p>kyumi16@gmail.com</p>
           </li>
-          <li className='mt-2'>
+          {/* <li className='mt-2'>
             <h4>생년월일</h4>
             <p>1993년 11월 16일 &#40;만29세&#41;</p>
           </li>
           <li className='mt-2'>
             <h4>주소</h4>
             <p>인천시 계양구 장제로 995번길 26</p>
-          </li>
+          </li> */}
           <li className='mt-2 link'>
             <h4>
               <a href='https://github.com/rladbal0101' target='_blank'><BsGithub />GitHub</a>
