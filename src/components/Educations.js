@@ -37,7 +37,7 @@ function Educations(props) {
 
   return (
     <EducationWraaper className='mt-5' id='education'>
-      <h2>Education</h2>
+      <h1>Education</h1>
       {
         sortEducationData.map(education => 
           <Education className='mt-5' key={education.id}>

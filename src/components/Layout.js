@@ -138,7 +138,8 @@ function Layout(props) {
           <Logo className='cursor-pointer logo'><a href='#'>Yumi Kim</a></Logo>
           <NavWrapper>
             <ul className='nav'>
-              <li className='cursor-pointer'><a href='#profile'>Profile</a></li>
+              {/* <li className='cursor-pointer'><a href='#profile'>Profile</a></li> */}
+              <li className='cursor-pointer'><a href='#contact'>Contact</a></li>
               <li className='cursor-pointer'><a href='#introduce'>Introduce</a></li>
               <li className='cursor-pointer'><a href='#education'>Education</a></li>
               <li className='cursor-pointer'><a href='#work'>Work</a></li>

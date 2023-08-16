@@ -26,7 +26,7 @@ const Other = styled.div`
 function Others(props) {
   return (
     <OtherWraaper className='mt-5' id='other'>
-      <h2>Other Experience</h2>
+      <h1>Other Experience</h1>
       <Other className='mt-5'>
         {/* <p>
           들어갈 내용: 1) 회사 2) 부서/직함 3) 기간 4) 진행한 일 5) 사용한 기술 6) 성과와 수치 중심의 결과(예: 매출 신장률, 수상 경력, 언론 기사 등) 등

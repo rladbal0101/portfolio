@@ -105,7 +105,7 @@ function Projects(props) {
 
   return (
     <ProjectsWraaper className='mt-5' id='project'>
-      <h2>Projects</h2>
+      <h1>Projects</h1>
       {
         sortProjectData.map(project => 
           <Project className='mt-5'>

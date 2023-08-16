@@ -13,6 +13,10 @@ const WorkWraaper = styled.div`
 
 const Work = styled.div`
   text-align: left;
+
+  & + & {
+    margin-top: 30px;
+  }
 `;
 
 const WorkTitleContainer = styled.div`
@@ -42,22 +46,24 @@ function Works(props) {
   
   return (
     <WorkWraaper className='mt-5' id='work'>
-      <h2>Work</h2>
-      {
-        sortWorkData.map(work =>
-          <Work className='mt-3'>
-            <WorkTitleContainer>
-              <h3>{work.company}</h3>
-              <PositionText>{work.position}</PositionText>
-            </WorkTitleContainer>
-            <p>{work.period}</p>
-            <p>직무 : {work.field}</p>
-            <ContentText>담당업무 : 
-              {work.content.map(content => <li>{content}</li>)}  
-            </ContentText>
-          </Work>
-        )
-      }
+      <h1>Work</h1>
+      <div className='mt-5'>
+        {
+          sortWorkData.map(work =>
+            <Work>
+              <WorkTitleContainer>
+                <h3>{work.company}</h3>
+                <PositionText>{work.position}</PositionText>
+              </WorkTitleContainer>
+              <p>{work.period}</p>
+              <p>직무 : {work.field}</p>
+              <ContentText>담당업무 : 
+                {work.content.map(content => <li>{content}</li>)}  
+              </ContentText>
+            </Work>
+          )
+        }
+      </div>
     </WorkWraaper>
   );
 }
