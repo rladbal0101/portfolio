@@ -37,10 +37,10 @@ function Main(props) {
       <Contact />
       <Introduce />
       <Educations />
-      <Works />
       <Projects />
       <Others />
       <Skills />
+      <Works />
       <Scroll href='#'>
         <BsArrowUpCircleFill />
       </Scroll>

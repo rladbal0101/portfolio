@@ -142,10 +142,10 @@ function Layout(props) {
               <li className='cursor-pointer'><a href='#contact'>Contact</a></li>
               <li className='cursor-pointer'><a href='#introduce'>Introduce</a></li>
               <li className='cursor-pointer'><a href='#education'>Education</a></li>
-              <li className='cursor-pointer'><a href='#work'>Work</a></li>
               <li className='cursor-pointer'><a href='#project'>Project</a></li>
               <li className='cursor-pointer'><a href='#other'>Others</a></li>
               <li className='cursor-pointer'><a href='#skill'>Skills</a></li>
+              <li className='cursor-pointer'><a href='#work'>Work</a></li>
             </ul>
           </NavWrapper>
         </HeaderInner>
