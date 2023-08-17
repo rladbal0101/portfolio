@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import dataSkills from "../dataSkills.json";
 
 const SkillsWraaper = styled.div`
   padding: 50px 0;
@@ -10,16 +11,11 @@ const SkillsWraaper = styled.div`
   }
 
   li {
-    /* display: flex; */
-    /* align-items: center; */
-    /* text-align: left; */
 
     h3 {
       font-weight: 700;
       white-space : nowrap;
       padding: 0 8px;
-      /* background-color: rgba(128, 216, 218, 0.2);
-      border-radius: 20px; */
     }
   }
 `;
@@ -29,30 +25,14 @@ function Skills(props) {
     <SkillsWraaper className='mt-5' id='skill'>
       <h1>Skills</h1>
         <ul className='mt-5'>
-          <li className='mt-2'>
-            <h3>UI</h3>
-            <p className='ml-1'>HTML, CSS, JavaScript&#40;ES6+&#41;, React, Redux, ajax&#40;Axios&#41;, Bootstrap</p>
-          </li>
-          <li className='mt-2'>
-            <h3>Language</h3>
-            <p className='ml-1'>JavaScript</p>
-          </li>
-          <li className='mt-2'>
-            <h3>MiddleWare</h3>
-            <p className='ml-1'>Redux</p>
-          </li>
-          <li className='mt-2'>
-            <h3>개발도구</h3>
-            <p className='ml-1'>Git, Chrome Dev Tool, Visual Studio Code</p>
-          </li>
-          <li className='mt-2'>
-            <h3>협업도구</h3>
-            <p className='ml-1'>GitHub, Figma</p>
-          </li>
-          <li className='mt-2'>
-            <h3>품질관리도구</h3>
-            <p className='ml-1'>LightHouse, W3C, Validators</p>
-          </li>
+          {
+            dataSkills.map(skill => 
+              <li className='mt-2'>
+                <h3>{skill.title}</h3>
+                <p className='ml-1'>{skill.content}</p>
+              </li>
+            )
+          }
         </ul>
     </SkillsWraaper>
   );

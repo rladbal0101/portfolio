@@ -114,6 +114,7 @@ function Projects(props) {
               <p>{project.introduction}</p>
               <p>개발기간 : {project.period}</p>
               <p>개발인원 : {project.number}명</p>
+              <p>개발환경 : {project.environment}</p>
               <p>목표 : </p>
               <ul className='mt-1'>
                 {project.objectives.map(objective => <li>{objective}</li>)}
@@ -122,6 +123,15 @@ function Projects(props) {
               <ul className='mt-1'>
                 {project.skills.map(skill => <li>{skill}</li>)}
               </ul>
+              {
+                project.responsiblePart &&
+                <>
+                  <p>담당업무 : </p>
+                  <ul className='mt-1'>
+                    {project.responsiblePart.map(responsiblePart => <li>{responsiblePart}</li>)}
+                  </ul>
+                </>
+              }
               <LinkWrapper className='mt-3 link-wrapper'>
                 <p>
                   <a href={project.url.map(link => link.home)} target='_blank'>

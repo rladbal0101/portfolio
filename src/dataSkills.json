@@ -1,0 +1,32 @@
+[
+  {
+    "id": "0",
+    "title": "UI",
+    "content": "HTML, CSS, JavaScript(ES6+), React, Redux, ajax(Axios), Bootstrap"
+  },
+  {
+    "id": "1",
+    "title": "Language",
+    "content": "JavaScript"
+  },
+  {
+    "id": "2",
+    "title": "MiddleWare",
+    "content": "Redux"
+  },
+  {
+    "id": "3",
+    "title": "개발도구",
+    "content": "Git, Chrome Dev Tool, Visual Studio Code"
+  },
+  {
+    "id": "4",
+    "title": "협업도구",
+    "content": "GitHub, Figma"
+  },
+  {
+    "id": "5",
+    "title": "품질관리도구",
+    "content": "LightHouse, W3C, Validators"
+  }
+]
