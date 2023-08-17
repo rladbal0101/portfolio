@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0 20px;
     box-sizing: border-box;
     background-color: #f3f3f3;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   #root {

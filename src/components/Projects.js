@@ -25,7 +25,7 @@ const Project = styled.div`
   align-items: center;
 
   ul {
-    list-style-type: "- ";
+    list-style-type: disc;
     padding-left: 20px;
 
     li {
@@ -33,6 +33,10 @@ const Project = styled.div`
     }
     li + li {
       margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: circle;
     }
   }
 
@@ -62,7 +66,7 @@ const ProjectContents = styled.div`
   margin: 0 20px 0 0;
 
   & > p {
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
 `;
 
@@ -110,25 +114,40 @@ function Projects(props) {
         sortProjectData.map(project => 
           <Project className='mt-5'>
             <ProjectContents className='project-contents'>
-              <h3>{project.name}</h3>
-              <p>{project.introduction}</p>
-              <p>개발기간 : {project.period}</p>
-              <p>개발인원 : {project.number}명</p>
-              <p>개발환경 : {project.environment}</p>
-              <p>목표 : </p>
+              <h2>{project.name}</h2>
+              <p className='mt-1'>{project.introduction} | {project.period}</p>
+              <p className='mt-1'>{project.contribute}</p>
+              <p className='mt-1'>{project.environment}</p>
+              <h3 className='mt-2'>1. 목표</h3>
               <ul className='mt-1'>
                 {project.objectives.map(objective => <li>{objective}</li>)}
               </ul>
-              <p>기능 : </p>
+              <h3 className='mt-2'>2. 기능</h3>
               <ul className='mt-1'>
                 {project.skills.map(skill => <li>{skill}</li>)}
               </ul>
               {
                 project.responsiblePart &&
                 <>
-                  <p>담당업무 : </p>
+                  <h3 className='mt-2'>3. 담당업무</h3>
                   <ul className='mt-1'>
                     {project.responsiblePart.map(responsiblePart => <li>{responsiblePart}</li>)}
+                  </ul>
+                </>
+              }
+              {
+                project.collaborate &&
+                <>
+                  <h3 className='mt-2'>4. 협업과정</h3>
+                  <ul className='mt-1'>
+                    {project.collaborate.map(collaborate => 
+                      <>
+                        <li className='mt-1'>{collaborate.title}</li>
+                        <ul className='mt-1'>
+                          {collaborate.content.map(collaborateContent => <li>{collaborateContent}</li>)}
+                        </ul>
+                      </>
+                    )}
                   </ul>
                 </>
               }

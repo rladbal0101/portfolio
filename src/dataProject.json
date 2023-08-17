@@ -4,7 +4,8 @@
     "name": "Piece of your wish",
     "period": "2023.04.23 - 2023.05.03",
     "number": "1",
-    "introduction": "플라워샵 운영을 위한 제품 소개 및 결제 시스템",
+    "contribute": "개인 프로젝트 (기여도 100%)",
+    "introduction": "플라워샵 운영을 위한 시스템",
     "objectives" : [
       "웹페이지 플라워샵을 운영하여 고객들에게 다양한 종류의 꽃과 꽃다발을 제공",
       "편리한 결제 시스템을 통해 원활한 구매 경험을 제공"
@@ -15,7 +16,7 @@
       "GSAP & ScrollToPlugin, SWIPER, ScrollMagic 등 다양한 라이브러리를 사용하여 페이지 구현",
       "다양한 기기에서 웹페이지를 편리하게 이용할 수 있도록 모바일 반응형 디자인을 적용"
     ],
-    "environment": "HTML, CSS, JavaScript",
+    "environment": "Figma, HTML, CSS, JavaScript",
     "url": [
       {
         "home": "https://piecewish.netlify.app",
@@ -29,6 +30,7 @@
     "name": "Family Talk",
     "period": "2023.06.26 - 2023.7.11",
     "number": "4",
+    "contribute": "직업훈련 과정 팀 프로젝트 (기여도: Figma 화면 구현 80%, 메인 페이지 100%, 이용권 페이지 100%), 개발인원 4명",
     "introduction": "가족들의 일상 공유 시스템",
     "objectives" : [
       "가족 구성원들이 일상을 공유하고 소통하는 편리한 플랫폼을 제공하여 가족 간의 유대감을 강화하고 협력을 도모하는 것",
@@ -41,11 +43,28 @@
       "My JSON Server를 활용하여 간단한 API 서버를 구축하여 사용자 정보를 저장하고 관리"
     ],
     "responsiblePart": [
+      "메인화면의 이미지 슬라이드를 통해 시각적 효과 전달",
       "날씨 API를 활용하여 현재 위치의 실시간 날씨 정보를 표시",
       "저장된 데이터를 활용하여 가족 구성원들의 생일 디데이를 계산하고, 다가오는 생일 중 가장 가까운 것을 화면에 표시",
       "토스페이먼츠를 이용하여 결제 위젯을 시스템에 연동"
     ],
-    "environment": "React App",
+    "collaborate": [
+      {
+        "title": "Github의 Git Flow를 활용한 협업",
+        "content": [
+          "feat/브랜치에서 작업한 내역을 develop 브랜치에 push",
+          "develop 브랜치에서 최종 점검을 거쳐 main 브랜치에 push"
+        ]
+      },
+      {
+        "title": "작업시작 전 회의 진행",
+        "content": [
+          "당일 작업할 내용 및 이슈 공유",
+          "에러발생시 해결방법 수시로 논의 및 해결"
+        ]
+      }
+    ],
+    "environment": "Figma, React, Redux-toolkit, styled-components",
     "url": [
       {
         "home": "https://family-talk.netlify.app",
@@ -59,6 +78,7 @@
     "name": "YUMI's Portfolio",
     "period": "2023.07.28 - 2023.08.10",
     "number": "1",
+    "contribute": "개인 프로젝트 (기여도 100%)",
     "introduction": "나만의 포트폴리오 사이트",
     "objectives" : [
       "사이트를 통해 프론트엔드 개발 역량과 능력을 효과적으로 전달",
@@ -66,11 +86,11 @@
       "다양한 디바이스와 화면 크기에 대응하는 반응형 웹 디자인을 구현"
     ],
     "skills": [
-      "다양한 프로젝트와 이력 및 자기소개 등을 나열",
+      "자기소개와 이력 및 프로젝트와 경험 등을 나열",
       "반응형 디자인으로 사용자의 편의성과 접근성 강화",
       "프로젝트 상세 정보를 나타내는 페이지로의 링크 제공하여 자세한 내용 확인 가능"
     ],
-    "environment": "React App",
+    "environment": "React, styled-components",
     "url": [
       {
         "home": "https://yumi-portfolio.netlify.app",
