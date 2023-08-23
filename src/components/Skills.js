@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import dataSkills from "../dataSkills.json";
+import Table from 'react-bootstrap/Table';
 
 const SkillsWraaper = styled.div`
   padding: 50px 0;
@@ -10,12 +11,24 @@ const SkillsWraaper = styled.div`
     padding-top: 65px;
   }
 
-  li {
+  table {
+    width: 100%;
 
-    h3 {
-      font-weight: 700;
-      white-space : nowrap;
-      padding: 0 8px;
+    td {
+      border: 1px solid #aaa;
+      padding: 4px 8px;
+  
+      &.skill-title {
+        font-weight: 700;
+        white-space : nowrap;
+        text-align: center;
+        vertical-align: middle;
+        border-left: none;
+      }
+    
+      &.skill-content {
+        border-right: none;
+      }
     }
   }
 `;
@@ -24,16 +37,16 @@ function Skills(props) {
   return (
     <SkillsWraaper className='mt-5' id='skill'>
       <h1>Skills</h1>
-        <ul className='mt-5'>
-          {
-            dataSkills.map(skill => 
-              <li className='mt-2'>
-                <h3>{skill.title}</h3>
-                <p className='ml-1'>{skill.content}</p>
-              </li>
-            )
-          }
-        </ul>
+      <table className='mt-5'>
+        {
+          dataSkills.map(skill => 
+            <tr>
+              <td className='skill-title'>{skill.title}</td>
+              <td className='skill-content'>{skill.content}</td>
+            </tr>
+          )
+        }
+      </table>
     </SkillsWraaper>
   );
 }

@@ -1,8 +1,8 @@
 [
   {
     "id": "0",
-    "title": "UI",
-    "content": "HTML5, CSS3, JavaScript(ES6+), React, Redux, ajax(Axios), Bootstrap"
+    "title": "웹",
+    "content": "HTML5, JavaScript(ES6+), React, ajax(Axios)"
   },
   {
     "id": "1",
@@ -11,22 +11,53 @@
   },
   {
     "id": "2",
+    "title": "상태 관리",
+    "content": "React Hook"
+  },
+  {
+    "id": "3",
+    "title": "스타일링",
+    "content": "CSS3, Styled-components"
+  },
+  {
+    "id": "4",
     "title": "MiddleWare",
     "content": "Redux"
   },
   {
-    "id": "3",
-    "title": "개발도구",
+    "id": "5",
+    "title": "디자인 시스템",
+    "content": "Bootstrap, React Bootstrap"
+  },
+  {
+    "id": "6",
+    "title": "디자인 툴",
+    "content": "Figma, Photoshop"
+  },
+  {
+    "id": "7",
+    "title": "형상 관리",
+    "content": "Github, Source Tree"
+  },
+  {
+    "id": "8",
+    "title": "협업 툴",
+    "content": "Github, Notion"
+  },
+  {
+    "id": "9",
+    "title": "개발 도구",
     "content": "Git, Chrome Dev Tool, Visual Studio Code"
   },
   {
-    "id": "4",
-    "title": "협업도구",
-    "content": "GitHub, Figma"
+    "id": "10",
+    "title": "품질관리도구 ",
+    "content": "LightHouse, W3C, Validators"
   },
   {
-    "id": "5",
-    "title": "품질관리도구",
-    "content": "LightHouse, W3C, Validators"
+    "id": "11",
+    "title": "배포",
+    "content": "netlify"
   }
+  
 ]
